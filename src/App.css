@@ -1,0 +1,38 @@
+/* Basic app layout */
+.app-container {
+  max-width: 980px;
+  margin: 28px auto;
+  padding: 0 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #111827;
+}
+
+header h1 { margin: 0 0 12px; font-size: 26px; }
+
+/* Controls */
+.controls { display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+.controls input { flex:1; padding:8px 10px; border:1px solid #d1d5db; border-radius:6px; }
+.btn { padding:7px 12px; border-radius:6px; border:1px solid #cbd5e1; background:white; cursor:pointer; }
+.btn.primary { background:#2563eb; color:white; border-color:#2563eb; }
+.btn.danger { background:#ef4444; color:white; border-color:#ef4444; }
+
+/* Table */
+.table-wrapper { overflow:auto; background:white; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+.users-table { width:100%; border-collapse:collapse; }
+.users-table th, .users-table td { text-align:left; padding:10px 12px; border-bottom:1px solid #e6e9ef; }
+.users-table th { background:#0f172a; color:white; }
+
+/* Modal */
+.modal-backdrop {
+  position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+  background: rgba(2,6,23,0.5); z-index:50;
+}
+.modal-box {
+  background:white; padding:18px; border-radius:8px; width:100%; max-width:420px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.15);
+}
+.form-stack { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+.form-stack input { padding:10px; border:1px solid #d1d5db; border-radius:6px; width:100%; }
+.form-actions { display:flex; justify-content:flex-end; gap:8px; margin-top:6px; }
+
+.error { color:#b91c1c; font-size:13px; margin:4px 0 0; }
